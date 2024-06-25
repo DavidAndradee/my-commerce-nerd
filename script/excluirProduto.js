@@ -1,4 +1,4 @@
-// import { conection } from "./conection.js"
+import { conection } from "./conection.js"
 
 document.querySelectorAll('.trash').forEach(button => {
         button.addEventListener('click', async (event) => {
