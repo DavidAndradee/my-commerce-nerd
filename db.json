@@ -1,0 +1,64 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Mário Poster ",
+      "preco": "15,50",
+      "imagem": "https://sm.ign.com/ign_br/cover/s/super-mari/super-mario-run_aqb9.jpg"
+    },
+    {
+      "id": "2",
+      "nome": "Controle",
+      "preco": "55,50",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/128648/controle-microsoft-xbox-sem-fio-branco-qas-00007_1601326573_g.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "FuncoPpop",
+      "preco": "11,99",
+      "imagem": "https://m.media-amazon.com/images/I/51prJSXp7IL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "JoySticker",
+      "preco": "189,99",
+      "imagem": "src/assets/image 2.png"
+    },
+    {
+      "id": "5",
+      "nome": "Ceneca Star Wars",
+      "preco": "189,99",
+      "imagem": "src/assets/unsplash_6FDXGY9J6y4.png"
+    },
+    {
+      "id": "070a",
+      "nome": "PS5",
+      "preco": "5.000,00",
+      "imagem": "https://m.media-amazon.com/images/I/51rzWirXO4L.jpg"
+    },
+    {
+      "id": "c839",
+      "nome": "Mouse Gamer",
+      "preco": "167,20",
+      "imagem": "https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/cnczxhuc/file.png"
+    },
+    {
+      "id": "7503",
+      "nome": "Teclado Ganer",
+      "preco": "85,20",
+      "imagem": "https://img.kalunga.com.br/fotosdeprodutos/671294z.jpg"
+    },
+    {
+      "id": "9ea3",
+      "nome": "Monitor Gamer",
+      "preco": "1.500,00",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/1314794/monitor_gamer_pcfort_t2701_165_27_led_full_hd_165hz_display_port_hdmi_dvi_vesa_2607_1_41f110c369e18c77abe42f0bfbe24480.jpg"
+    },
+    {
+      "id": "2d15",
+      "nome": "Headset Gamer",
+      "preco": "55,00",
+      "imagem": "https://cdn.sistemawbuy.com.br/arquivos/b7cfcf4b6f8ad29d99ba7f1434a89c9b/produtos/64308e7a54a24/fone-de-ouvido-gamer-kp-491-azul-643c66a632bc0.png"
+    }
+  ]
+}
