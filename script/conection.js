@@ -1,12 +1,12 @@
 async function listarProduto() {
-    const conexao = await fetch("https://my-json-server.typicode.com/DavidAndradee/my-commerce-nerd/produtos");
+    const conexao = await fetch("https://667c8fc13c30891b865d037a.mockapi.io/my-commerce-jso-server/produtos");
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
 
 async function criaProduto(nome, preco, imagem) {
 
-    const conexao = await fetch("http://localhost:3000/produtos", {
+    const conexao = await fetch("https://667c8fc13c30891b865d037a.mockapi.io/my-commerce-jso-server/produtos", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -24,7 +24,7 @@ async function criaProduto(nome, preco, imagem) {
 
 async function excluirProduto(productId) {
     try {
-        const conection = await fetch(`http://localhost:3000/produtos/${productId}`, {
+        const conection = await fetch(`https://667c8fc13c30891b865d037a.mockapi.io/my-commerce-jso-server/produtos/${productId}`, {
             method: "DELETE",
         });
         const data = await conection.json();
