@@ -1,5 +1,5 @@
 async function listarProduto() {
-    const conexao = await fetch("http://localhost:3000/produtos");
+    const conexao = await fetch("https://my-json-server.typicode.com/DavidAndradee/my-commerce-nerd/produtos");
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
