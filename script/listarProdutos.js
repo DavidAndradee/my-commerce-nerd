@@ -15,7 +15,7 @@ function constroiCard(name, price, image, id) {
                         <div class="price">
                             <p>$ ${price}</p>
                             <button id="${id}" class="trash" data-form-delete>
-                                <img src="./src/assets/Vector.png" alt="">
+                                <img src="src/assets/Vector.png" alt="excluir">
                             </button>
                         </div>
                     </div>
