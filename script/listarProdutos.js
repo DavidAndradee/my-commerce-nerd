@@ -31,7 +31,6 @@ async function listaProduto() {
     deleteBtns.forEach(btn => {
         btn.addEventListener("click", () => excluirProduto(btn.id));
     });
-    window.location.reload(true);
 
 }
 
