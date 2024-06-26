@@ -1,5 +1,5 @@
 async function listarProduto() {
-    const conexao = await fetch("https://github.com/DavidAndradee/my-commerce-nerd/blob/main/produtos");
+    const conexao = await fetch("http://localhost:3000/produtos");
     const conexaoConvertida = await conexao.json();
     return conexaoConvertida;
 }
