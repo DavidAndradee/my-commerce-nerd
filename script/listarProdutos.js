@@ -1,9 +1,10 @@
 import { conection } from "./conection.js";
+import { excluirProduto } from "./excluirProduto.js";
 
 
 const lista = document.querySelector("[data-lista]")
 
-function constroiCard(name, price, image) {
+function constroiCard(name, price, image, id) {
     const produto = document.createElement("div")
     produto.className = "card-produto";
 
@@ -13,7 +14,7 @@ function constroiCard(name, price, image) {
                         <p>${name}</p>
                         <div class="price">
                             <p>$ ${price}</p>
-                            <button id="excluir" class="trash">
+                            <button id="${id}" class="trash" data-form-delete>
                                 <img src="/src/assets/Vector.png" alt="">
                             </button>
                         </div>
@@ -24,7 +25,12 @@ function constroiCard(name, price, image) {
 
 async function listaProduto(){
     const listaApi = await conection.listarProduto();
-    listaApi.forEach(element => lista.appendChild(constroiCard(element.nome, element.preco, element.imagem)))
+    listaApi.forEach(element => lista.appendChild(constroiCard(element.nome, element.preco, element.imagem, element.id)))
+
+    const deleteBtns = document.querySelectorAll("[data-form-delete]");
+            deleteBtns.forEach(btn => {
+                btn.addEventListener("click", () => excluirProduto(btn.id));
+            });
 
 }
 

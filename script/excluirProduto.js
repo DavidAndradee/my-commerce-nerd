@@ -1,13 +1,16 @@
 import { conection } from "./conection.js"
 
-document.querySelectorAll('.trash').forEach(button => {
-        button.addEventListener('click', async (event) => {
-            alert('Não foi possivel excluir o produto!!!!')
-            const id = event.currentTarget.getAttribute('data-id');
-            await excluiProduto(id);
-            await listarProduto();
-        });
-    });
+async function excluirProduto(productId) {
+    try {
+        await conection.excluirProduto(productId);
+    } catch (error) {
+        console.error("Erro ao deletar produto:", error);
+    }
+
+    window.location.reload(true);
+}
+
+export { excluirProduto };
 
 
 
