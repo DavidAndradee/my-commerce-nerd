@@ -15,7 +15,7 @@ function constroiCard(name, price, image, id) {
                         <div class="price">
                             <p>$ ${price}</p>
                             <button id="${id}" class="trash" data-form-delete>
-                                <img src="./src/assets/Vector.png" alt="">
+                                <img src="src/assets/Vector.png" alt="">
                             </button>
                         </div>
                     </div>
@@ -23,14 +23,14 @@ function constroiCard(name, price, image, id) {
     return produto;
 }
 
-async function listaProduto(){
+async function listaProduto() {
     const listaApi = await conection.listarProduto();
     listaApi.forEach(element => lista.appendChild(constroiCard(element.nome, element.preco, element.imagem, element.id)))
 
     const deleteBtns = document.querySelectorAll("[data-form-delete]");
-            deleteBtns.forEach(btn => {
-                btn.addEventListener("click", () => excluirProduto(btn.id));
-            });
+    deleteBtns.forEach(btn => {
+        btn.addEventListener("click", () => excluirProduto(btn.id));
+    });
 
 }
 
