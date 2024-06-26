@@ -9,7 +9,7 @@ async function criarProduto(evento){
     const preco  = document.querySelector("[data-valor]").value;
 
     await conection.criaProduto(nome, preco, url)
-    window.location.reload
+    window.location.reload(true)
 }
 
 fromulario.addEventListener("submit", evento => criarProduto(evento))
