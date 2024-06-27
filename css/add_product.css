@@ -135,3 +135,26 @@ footer{
     font-size: 12px;
     padding: 5px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width:887px){
+
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column-reverse;
+    }
+    .card-produto{
+        flex:0 2 30% ;
+        background-color: var(--verde-escuro);
+        border-radius: 12px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .conteiner-formulario{
+        padding: 12px;
+        margin: 12px;
+        font-size: larger;
+    }
+}
